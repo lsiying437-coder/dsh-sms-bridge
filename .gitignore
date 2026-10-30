@@ -1,0 +1,6 @@
+.token
+server.log
+server.err.log
+myphone.txt
+*.log
+.DS_Store

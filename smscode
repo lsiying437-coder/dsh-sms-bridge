@@ -1,0 +1,6 @@
+#!/bin/bash
+# smscode 命令行入口：./smscode [关键词] [--wait N] [--json] [--copy] [--list]
+DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+PY=/usr/bin/python3
+[ -x "$PY" ] || PY="$(command -v python3)"
+exec "$PY" "$DIR/smscode.py" "$@"
